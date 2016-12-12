@@ -5,7 +5,7 @@ var Twitter = new Twit(config)
 
 var retweet = () => {
   var params = {
-    q: '#JavaScript30', '#NodeJS',
+    q: '#JavaScript30, #NodeJS',
     result_type: 'recent',
     lang: 'en'
   }
