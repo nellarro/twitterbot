@@ -3,7 +3,7 @@ var config = require('./config.js')
 
 var Twitter = new Twit(config)
 
-var retweet = function() {
+var retweet = () => {
   var params = {
     q: '#nodejs, #Nodejs',
     result_type: 'recent',
@@ -29,3 +29,4 @@ var retweet = function() {
   })
   retweet()
   setInterval(retweet, 50000)
+
