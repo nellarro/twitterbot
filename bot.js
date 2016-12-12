@@ -1,11 +1,11 @@
 var Twit = require('twit')
-var config = require('./config.js')
+var config = require('./configuration.js')
 
 var Twitter = new Twit(config)
 
 var retweet = () => {
   var params = {
-    q: '#nodejs, #Nodejs',
+    q: '#JavaScript30', '#NodeJS',
     result_type: 'recent',
     lang: 'en'
   }
@@ -20,13 +20,14 @@ var retweet = () => {
         id: retweetId
       }, (error, response) => {
         if (response) {
-          console.log('retweeted!')
+          console.log('💛')
         } else {
-          console.log('something went wrong while retweeting')
+          console.log('Something wicked this way comes! 💀🐍! Or maybe just duplication.')
         }
       })
     }
   })
-  retweet()
-  setInterval(retweet, 50000)
+}
+retweet()
+setInterval(retweet, 50000)
 
