@@ -1,7 +1,7 @@
 var Twit = require('twit')
 var config = require('./config.js')
+var twitter = new Twit(config)
 
-<<<<<<< HEAD
 var retweet = () => {
   var params = {
     q: '#node', '#NodeJS',
@@ -15,6 +15,3 @@ Twitter.get('search/tweets', params, function(error, data)) {
     let retweetId = data
   }
 }
-=======
-var twitter = new Twit(config)
->>>>>>> dd24b629800e629f2d7a344ead86bfac88967f7b
