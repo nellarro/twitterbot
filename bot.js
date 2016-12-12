@@ -1,5 +1,5 @@
 var Twit = require('twit')
-var config = require('./config.js')
+var config = require('./configuration.js')
 var twitter = new Twit(config)
 
 var retweet = () => {
