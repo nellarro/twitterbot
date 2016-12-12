@@ -5,7 +5,7 @@ var Twitter = new Twit(config)
 
 var retweet = () => {
   var params = {
-    q: '#JavaScript30, #NodeJS',
+    q: '#JavaScript30, #ReactJS',
     result_type: 'recent',
     lang: 'en'
   }
@@ -30,4 +30,3 @@ var retweet = () => {
 }
 retweet()
 setInterval(retweet, 50000)
-
