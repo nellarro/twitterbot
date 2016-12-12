@@ -6,6 +6,6 @@ First time I tried a Twitter Bot was at a Meetup in 2 hours or less so there was
 
 
 
-###Thing's You Need To Re-Create
+###Things You Need To Re-Create
 
 [Twit Documentation](https://www.npmjs.com/package/twit)
