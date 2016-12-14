@@ -38,9 +38,11 @@ var favorite = () => {
     lang: 'en'
   }
 
-  var ranDom = (min, max) => {
-    return Math.random() * (max - min) + min
-  }
+  var ranDom = (arr) => {
+    var index = Math.floor(Math.random()* arr.length)
+    return arr[index]
+}
+
 
   Twitter.get('search/tweets', fav_params, (err, data) => {
 
