@@ -5,7 +5,7 @@ var Twitter = new Twit(config)
 
 var retweet = () => {
   var params = {
-    q: '#JavaScript30, #ReactJS',
+    q: '#JavaScript30 OR #ReactJS OR  OR #javascriptforbeginners OR #codenewbie OR #freecodecamp OR #juniorprogrammer OR #juniorwebdev OR #HTML OR #CSS OR #codepen' ,
     result_type: 'recent',
     lang: 'en'
   }
@@ -29,11 +29,11 @@ var retweet = () => {
   })
 }
 retweet()
-setInterval(retweet, 50000)
+setInterval(retweet, 12000000)
 
 var favorite = () => {
   var fav_params = {
-    q: '#ReactJS OR #JavaScript',
+    q: '#ReactJS OR #first-timers-only OR #juniordev or #womenintech',
     result_type: 'recent',
     lang: 'en'
   }
@@ -52,9 +52,9 @@ var favorite = () => {
     if (typeof randomTweet != 'undefined') {
       Twitter.post('favorites/create', {id: randomTweet.id_str}, (err, response) =>{
         if (err) {
-          console.log('No favorite due to error. ❌')
+          console.log('No favorite. ❌')
         } else {
-          console.log('❤️')
+          console.log('Liked: ❤️')
         }
       })
     }
@@ -62,4 +62,4 @@ var favorite = () => {
 }
 
 favorite()
-setInterval(favorite, 210000)
+setInterval(favorite, 65000)
