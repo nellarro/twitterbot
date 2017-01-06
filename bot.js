@@ -5,7 +5,7 @@ var Twitter = new Twit(config)
 
 var retweet = () => {
   var params = {
-    q: '#JavaScript30 OR #ReactJS OR  OR #javascriptforbeginners OR #codenewbie OR #freecodecamp OR #juniorprogrammer OR #juniorwebdev OR #HTML OR #CSS OR #codepen' ,
+    q: '#JavaScript30 OR #ReactJS OR #100DaysOfCode OR #javascriptforbeginners OR #codenewbie OR #freecodecamp OR #juniorprogrammer OR #juniorwebdev OR #HTML OR #CSS OR #codepen OR #juniordev' ,
     result_type: 'recent',
     lang: 'en'
   }
@@ -29,7 +29,7 @@ var retweet = () => {
   })
 }
 retweet()
-setInterval(retweet, 12000000)
+setInterval(retweet, 1200000)
 
 var favorite = () => {
   var fav_params = {
@@ -62,4 +62,4 @@ var favorite = () => {
 }
 
 favorite()
-setInterval(favorite, 65000)
+setInterval(favorite, 55000)
