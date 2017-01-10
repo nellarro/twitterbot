@@ -22,14 +22,14 @@ var retweet = () => {
         if (response) {
           console.log('💛')
         } else {
-          console.log('Something wicked this way comes! 💀🐍! Or maybe just duplication.')
+          console.log(error + '\n' + 'Something wicked this way comes! 💀🐍! Or maybe just duplication.')
         }
       })
     }
   })
 }
 retweet()
-setInterval(retweet, 1200000)
+setInterval(retweet, 12000)
 
 var favorite = () => {
   var fav_params = {
